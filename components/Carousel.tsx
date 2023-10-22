@@ -3,8 +3,7 @@ import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { carousel_items } from '@/constants';
-
-var $ = require("jquery");
+import $ from "jquery";
 
 if (typeof window !== "undefined") {
     window.$ = window.jQuery = require("jquery");
@@ -19,12 +18,10 @@ const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
 const Carousel = () => {
 
     const options = {
-        responsiveclassName: true,
         nav: false,
         dots: false,
         autoplay: false,
         smartSpeed: 1000,
-        navclassName: ["owl-prev", "owl-next"],
         navText: [
             '',
             '',
