@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css"
+import Carousel from './Carousel';
 
 const Gallery = () => {
 
@@ -22,88 +23,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-      <div className="carousel">
-        <div className="carousel__outer">
-          <div  className="carousel__inner js-carousel owl-carousel">
-            <div className="carousel__slide">
-              <img src="/ss01-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Launch Screen</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss02-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Login</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss03-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Add Contacts</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss04-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Contact List (Roster)</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss05-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Contact Details</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss06-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Contact Edit</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss07-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Chat Basic Text</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss08-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Pictures and Audio Message</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss09-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Message Purge</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss10-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Active Call</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss11-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Active Chats List</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss12-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Chat List Purge</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss13-432x768.png" className="carousel__image" alt="Carousel Slide Image"/>
-                <h3 className="carousel__title">Incoming Call</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss14-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Group Chat Contact Select</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss15-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Group Chat Name Edit</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss16-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Audio Message</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss17-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Distribution List Edit</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss18-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Distribution Lists</h3>
-            </div>
-            <div className="carousel__slide">
-              <img src="/ss19-432x768.png" className="carousel__image" alt="Carousel Slide Image" />
-              <h3 className="carousel__title">Personal Details Edit</h3>
-            </div>
-          </div >
-        </div>
-      </div>
+      <Carousel />
     </section>
   )
 }
