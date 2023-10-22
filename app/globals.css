@@ -1,83 +1,4 @@
-@charset "UTF-8";
-/**
- * Description: VSApp - Ultimate App Landing Page
- * Version: 1.0.0
- * Last update: 2016/09/04
- * Author: VSArt <support@vsart.me>
- *
- * Summary:
- *
- *	0. Common
- *		- 0.1. Normalize
- *		- 0.2. Common
- *		- 0.3. Config
- *		- 0.4. Form
- *		- 0.5. Grid
- *		- 0.6. Helper
- *		- 0.7. Layout
- *		- 0.8. List
- *		- 0.9. Media
- *		- 0.10. Mixins
- *		- 0.11. Text
- *		- 0.12. Transitions
- *	1. Vendor
- *		- 1.1. Animate
- *		- 1.2. Fontello
- *		- 1.3. Fontello-codes
- *		- 1.4. Superfish
- *		- 1.5. YouTubePopUp
- *		- 1.6. Carousel
- *		- 1.7. Sidr
- *	2. Blocks
- *		- 2.1. Accordion
- *		- 2.2. Box
- *		- 2.3. Button
- *		- 2.4. Carousel
- *		- 2.5. Contact Form
- *		- 2.6. Device
- *		- 2.7. Download Button
- *		- 2.8. Dropdown
- *		- 2.9. Error
- *		- 2.10. Footer
- *		- 2.11. Header
- *		- 2.12. Hero
- *		- 2.13. Input
- *		- 2.14. Instagram Widget
- *		- 2.15. Link List
- *		- 2.16. List
- *		- 2.17. Logo
- *		- 2.18. Map
- *		- 2.19. Member
- *		- 2.20. Member
- *		- 2.21. Menu
- *		- 2.22. Menu Trigger
- *		- 2.23. Mobile Menu
- *		- 2.24. Preloader
- *		- 2.25. Pricing
- *		- 2.26. Push
- *		- 2.27. Screens Preview
- *		- 2.28. Section
- *		- 2.29. Section Subtitle
- *		- 2.30. Section Title
- *		- 2.31. Slider
- *		- 2.32. Socials
- *		- 2.33. Stats
- *		- 2.34. Subscribe
- *		- 2.35. Tabs
- *		- 2.36. Testimonials
- *		- 2.37. Twitter Widget
- *		- 2.38. Video
 
- *	3. Media Queries
- */
-/* ==========================================================================
-   Common Styles
-   ========================================================================== */
-/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
- */
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,300,600,700&subset=latin,latin-ext);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic);
 html {
@@ -88,76 +9,11 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
 }
-/**
- * Remove the margin in all browsers (opinionated).
- */
+
 body {
   margin: 0;
 }
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  /* 1 */
-  display: block;
-}
-/**
- * Add the correct display in IE 9-.
- */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-}
-/**
- * Add the correct display in iOS 4-7.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0;
-}
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-/**
- * Add the correct display in IE 10-.
- * 1. Add the correct display in IE.
- */
-template,
-[hidden] {
-  display: none;
-}
-/* Links
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
+
 a:active,
 a:hover {
   outline-width: 0;
@@ -6740,116 +6596,8 @@ body.logged-in .YouTubePopUp-Wrap {
 .dropdown__item--active {
   color: #1eb858;
 }
-/* ==========================================================================
-   Block: Error
-   Dependencies: no dependencies
-   ========================================================================== */
-.error {
-  background-image: url("../assets/img/common/backgrounds/error.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  position: relative;
-  padding: 150px 0;
-  overflow: hidden;
-  min-height: 800px;
-}
-.error__title {
-  font-size: 26px;
-  font-weight: bold;
-  text-align: center;
-  color: white;
-  line-height: 1.5;
-  position: relative;
-  z-index: 10;
-}
-.error__highlight {
-  color: #1eb858;
-}
-.error__image {
-  width: 600px;
-  max-width: 100%;
-  position: relative;
-  z-index: 10;
-  margin: 0 auto;
-  display: block;
-}
-.error__wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-.error__circle {
-  position: absolute;
-  border: 2px dotted rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-}
-.error__circle--primary {
-  width: 450px;
-  height: 450px;
-  top: 50%;
-  left: 50%;
-  margin-top: -225px;
-  margin-left: -225px;
-}
-.error__circle--primary-inner {
-  width: 300px;
-  height: 300px;
-  top: 50%;
-  left: 50%;
-  margin-top: -150px;
-  margin-left: -150px;
-}
-.error__circle--secondary {
-  width: 75px;
-  height: 75px;
-  top: 30px;
-  right: 30px;
-  background-color: #1a1d22;
-}
-.error__circle--secondary-inner {
-  width: 30px;
-  height: 30px;
-  top: 50%;
-  left: 50%;
-  margin-top: -15px;
-  margin-left: -15px;
-}
-.error__link {
-  color: white;
-  font-size: 16px;
-  position: absolute;
-  left: -120px;
-  top: 50%;
-  margin-top: -20px;
-  font-family: 'Open Sans', sans-serif;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-bottom: 7px;
-}
-.error__link--right {
-  right: -120px;
-  left: auto;
-}
-.error__link--right .error__arrow {
-  right: -25px;
-  left: auto;
-}
-.error__arrow {
-  color: #1eb858;
-  position: absolute;
-  left: -25px;
-  top: 0px;
-}
-.error-page {
-  height: 100%;
-  min-height: 600px;
-}
+
+
 /* ==========================================================================
    Block: Footer
    Dependencies: Fontello.less
@@ -6929,16 +6677,18 @@ header .iconMenu {
    ========================================================================== */
 .hero {
   padding-top: 150px;
-  background-image: url("../assets/img/common/backgrounds/hero.jpg");
+  background-image: url("../public/hero.jpg");
   background-size: cover;
   background-position: center center;
 }
+
 .hero--skin-1 {
-  background-image: url("../assets/img/common/backgrounds/hero-2.jpg");
+  background-image: url("../public/hero.jpg");
   padding: 150px 0;
 }
+
 .hero--skin-2 {
-  background-image: url("../assets/img/common/backgrounds/hero-3.jpg");
+  background-image: url("../public/hero.jpg");
   padding: 150px 0;
   min-height: 740px;
 }
@@ -7534,16 +7284,6 @@ a[href^="https://maps.google.com/maps"] {
   padding: 0 !important;
   border: none !important;
 }
-.sidr {
-  width: 100%;
-  padding: 20px 80px;
-  display: none;
-  z-index: 100;
-}
-.sidr.right {
-  left: auto;
-  right: -100%;
-}
 /* ==========================================================================
    Block: Preloader
    Dependencies: no dependencies
@@ -7886,21 +7626,23 @@ a[href^="https://maps.google.com/maps"] {
   padding: 115px 0;
 }
 .section--skin-1 {
-  background-image: url("../assets/img/common/backgrounds/skin-1.jpg");
+  background-image: url("../public/skin-1.jpg");
   background-size: 100% 965px;
   background-position: center 130px;
   background-repeat: no-repeat;
 }
 .section--skin-2 {
-  background-image: url("../assets/img/common/backgrounds/skin-2.jpg");
+  background-image: url("../public/skin-1.jpg");
   background-size: 100% 965px;
   background-position: center 130px;
   background-repeat: no-repeat;
 }
+
 .section--skin-3 {
-  background-image: url("../assets/img/common/backgrounds/skin-3.jpg");
+  background-image: url("../public/skin-1.jpg");
   background-repeat: repeat;
 }
+
 .section--large {
   padding: 170px 0;
 }

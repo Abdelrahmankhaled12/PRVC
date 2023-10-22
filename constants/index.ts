@@ -9,12 +9,12 @@ export const header_links = [
 
 
 export const download_links = [
-    { img: "/googleplay.png", subtitle: "Android", title: "Google Play", url: "" },
+    { img: "/googleplay.png", subtitle: "Android", title: "Google Play", url: "/" },
     { img: "/appstore.png", subtitle: "iphone", title: "App Store", url: "https://apps.apple.com/us/app/prvc/id1040602933" },
-    { img: "/windowsphone.png", subtitle: "Windows Mobile", title: "Windows Store", url: "" },
-    { img: "/windowsstore.png", subtitle: "Windows", title: "Softpedia", url: "" },
+    { img: "/windowsphone.png", subtitle: "Windows Mobile", title: "Windows Store", url: "/" },
+    { img: "/windowsstore.png", subtitle: "Windows", title: "Softpedia", url: "/" },
     { img: "/macosx.png", subtitle: "macos x", title: "App Store", url: "https://apps.apple.com/us/app/prvc/id1160676387?mt=12?ls=1&mt=12" },
-    { img: "/linux.png", subtitle: "linux", title: "Softpedia", url: "" },
+    { img: "/linux.png", subtitle: "linux", title: "Softpedia", url: "/" },
 
 ]
 

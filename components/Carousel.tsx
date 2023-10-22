@@ -3,7 +3,6 @@ import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { carousel_items } from '@/constants';
-
 import $ from "jquery";
 
 declare global {
@@ -18,7 +17,6 @@ if (typeof window !== "undefined") {
     window.jQuery = $;
 }
 
-// This is for Next.js. On Rect JS remove this line
 const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
     ssr: false,
 });
