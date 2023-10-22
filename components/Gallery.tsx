@@ -4,6 +4,7 @@ import React, { useEffect } from 'react'
 import Aos from "aos";
 import "aos/dist/aos.css"
 import Carousel from './Carousel';
+import Subtitle from './Subtitle';
 
 const Gallery = () => {
 
@@ -19,7 +20,7 @@ const Gallery = () => {
         <div className="row">
           <div className="col-md-24">
             <h2 className="section-title section-title--center "> App screenshot <span className='section-title__highlight'> gallery </span></h2>
-            <p className="section-subtitle section-subtitle--center "> PRVC interface looks familiar to most users. There is no need to get used to it. </p>
+            <Subtitle text='PRVC interface looks familiar to most users. There is no need to get used to it.'/>
           </div>
         </div>
       </div>

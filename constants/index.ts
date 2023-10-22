@@ -26,6 +26,33 @@ export const members = [
     { img: "/tulenino.png", name: "Onotole Tulenino", position: "Marketing", cover: 'PRVC aimed to fill the gap between so called "secure messengers" startups and cumbersome enterprise on-premises systems with messaging option.' },
 ]
 
+
+export const carousel_items = [
+    {img:"/ss01-432x768.png",title:"Launch Screen"},
+    {img:"/ss02-432x768.png",title:"Login"},
+    {img:"/ss03-432x768.png",title:"Add Contacts"},
+    {img:"/ss04-432x768.png",title:"Contact List (Roster)"},
+    {img:"/ss05-432x768.png",title:"Contact Details"},
+    {img:"/ss06-432x768.png",title:"Contact Edit"},
+    {img:"/ss07-432x768.png",title:"Chat Basic Text"},
+    {img:"/ss08-432x768.png",title:"Pictures and Audio Message"},
+    {img:"/ss09-432x768.png",title:"Message Purge"},
+    {img:"/ss10-432x768.png",title:"Active Call"},
+    {img:"/ss11-432x768.png",title:"Active Chats List"},
+    {img:"/ss12-432x768.png",title:"Chat List Purge"},
+    {img:"/ss13-432x768.png",title:"Incoming Call"},
+    {img:"/ss14-432x768.png",title:"Group Chat Contact Select"},
+    {img:"/ss15-432x768.png",title:"Group Chat Name Edit"},
+    {img:"/ss16-432x768.png",title:"Audio Message"},
+    {img:"/ss17-432x768.png",title:"Distribution List Edit"},
+    {img:"/ss18-432x768.png",title:"Distribution Lists"},
+    {img:"/ss19-432x768.png",title:"Personal Details Edit"},
+
+
+
+
+]
+
 export const socials__item = [
     {href:"https://www.facebook.com/bytewerk.co",icon:"fontello-facebook" , style:"socials__button--facebook"},
     {href:"/",icon:"fontello-twitter-bird", style:"socials__button--twitter"},
