@@ -3,10 +3,19 @@ import dynamic from "next/dynamic";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { carousel_items } from '@/constants';
+
 import $ from "jquery";
 
+declare global {
+    interface Window {
+        $: typeof $;
+        jQuery: typeof $;
+    }
+}
+
 if (typeof window !== "undefined") {
-    window.$ = window.jQuery = require("jquery");
+    window.$ = $;
+    window.jQuery = $;
 }
 
 // This is for Next.js. On Rect JS remove this line
